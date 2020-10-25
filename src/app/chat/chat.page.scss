@@ -1,0 +1,94 @@
+.headerbg{
+    background-color: #ffb003;
+   
+    padding: 7px 0px 24px;
+    
+}
+
+
+.time{
+    font-size: 9px;
+    position: relative;
+    top: 11px;
+    right: -7px;
+}
+.time1{
+    font-size: 9px;
+    position: relative;
+    top: 11px;
+    right: 7px;
+}
+
+.msg_bg{
+    background: #fcf1eb;
+
+    padding: 13px;
+    border-radius: 16px 16px 0px;
+}
+
+.msg_bg1{
+    background: #efefef;
+    padding: 13px;
+    border-radius: 16px 16px 16px 0px;
+
+}
+
+
+.chat_box{
+    background: #f9d6c3;
+    border-radius: 35px;
+    padding: 6px !important;
+}
+
+
+.footer_btn{
+    z-index: 12;
+    padding: -3px;
+    width: 50px;
+    height: 50px;
+   
+}
+
+.send_btn{
+    position: absolute;
+    top: 12px;
+    right: 14px; 
+    --border-radius: 35px 35px 35px 0px;
+    --background:#fe7233;
+}
+
+.smile_btn{
+    position: absolute;
+    top: 12px;
+    right: 43px;
+    width: 65px;
+    --background:#ffa355;
+    --border-radius: 28px 0px 27px 0px;
+
+}
+
+
+.menus{
+    --background: #fe7233;
+}
+
+.border_radius{
+    --border-radius: 50%;
+    width:50px;
+    height: 50px;
+    margin-right:10px ;
+}
+
+.happy_icon{
+    position: relative;
+    right: 7px;
+}
+
+.attactment_btn{
+    position: absolute;
+    top: 12px;
+    right: 85px;
+    width: 65px;
+    --background: #fabd6d;
+    --border-radius: 28px 0px 27px 0px;
+}

@@ -1,0 +1,57 @@
+<ion-header [translucent]="true" class="headerbg">
+  <ion-toolbar style="--background:none">
+    <ion-buttons slot="start" >
+      <ion-back-button color="light" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <img slot="start" src="assets/icon/user-male.png" class="status_img">
+    <ion-title class="ion-no-padding"> Siddhant Jangle</ion-title>
+    <!-- <ion-button slot="end" class="border_radius"><ion-icon  name="videocam-outline"></ion-icon></ion-button>
+    <ion-button slot="end" class="border_radius"><ion-icon  name="call-outline"></ion-icon></ion-button> -->
+  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-fab horizontal="end" vertical="top" style="top:-88px" slot="fixed" edge>
+    <ion-fab-button class="menus">
+      <ion-icon size="large"  name="ellipsis-horizontal-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list>
+      <ion-fab-button color="light">
+        <ion-icon name="call-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <ion-icon name="videocam-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <ion-icon name="logo-vimeo"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  <ion-grid class="grid_home">
+<ion-row class="ion-padding-top" *ngFor="let chat of array">
+  <ion-col size="12" class="ion-padding ion-text-right"  *ngIf="chat.id == myid" >
+    <ion-text class="msg_bg">{{chat.msg}}
+    <ion-text class="time">12:12</ion-text>    </ion-text>
+    </ion-col>
+
+  <ion-col size="12" class="ion-padding ion-text-left" *ngIf="chat.id != myid">
+<ion-text class="msg_bg1">
+  <ion-text class="time1">12:12</ion-text> 
+  {{chat.msg}}
+
+
+</ion-text>
+</ion-col>
+
+</ion-row>
+
+  </ion-grid>
+  <ion-footer style="position: absolute;
+  bottom: 0;" class="ion-no-border ion-padding">
+    <ion-input class="chat_box"  placeholder="Type your message"></ion-input>
+    <ion-button class="footer_btn attactment_btn"><ion-icon class="happy_icon" name="attach-outline"></ion-icon></ion-button> 
+   <ion-button class="footer_btn smile_btn"><ion-icon class="happy_icon" name="happy-outline"></ion-icon></ion-button> 
+   <ion-button class="footer_btn send_btn"><ion-icon name="send"></ion-icon></ion-button> 
+  </ion-footer>
+</ion-content>
